@@ -1,6 +1,6 @@
 import "./index.less"
 
-export default function () {
+export default function LessDemo() {
   return (
     <div className="less-demo">
       安装less，less-loader，并使用"customize-cra"
