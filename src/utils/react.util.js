@@ -8,7 +8,7 @@ import { wait } from "./common.util"
  * @param {*} delay 延迟
  * @return {*}
  */
-export function withDelayOnLazyComp(compImport, delay) {
+export function withDelayOnLazyComp(compImport, delay = 500) {
   return lazy(() => {
     return Promise.all([compImport, wait(delay)]).then(
       ([compExport]) => compExport
